@@ -133,14 +133,14 @@ void search(pair<int, int> start, pair<int, int> exit) {
 }
 
 
-int main(int argc, char *argv[]) {
+int main() {
     ifstream ifile;
     char line[50];
     
     pair<int, int> start;
     pair<int, int> exit;
     
-    ifile.open(argv[1]);
+    ifile.open("maze.txt");
     if (ifile.is_open()) {
         while(ifile.getline(line,sizeof(line))) {
             cnt_y = 0;
