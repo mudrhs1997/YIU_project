@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
+    @IBOutlet weak var popupButton: UIButton!
+    
     @IBOutlet weak var teamTableView: UITableView! {
         didSet {
             teamTableView.delegate = self
@@ -23,19 +25,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         teamTableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "teamCell")
         
         teamTableView.layer.cornerRadius = 20
+        teamTableView.separatorStyle = .none
         
+        popupButton.layer.cornerRadius = popupButton.bounds.size.width / 2
 
         
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let teamCell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath) as! TeamTableViewCell
         
         teamCell.selectionStyle = .none
+        
         
         
         

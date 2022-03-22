@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C18F91B227E9E3FA00E04126 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F91B127E9E3FA00E04126 /* PopupViewController.swift */; };
 		C19693FC27E8578700BB008A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19693FB27E8578700BB008A /* AppDelegate.swift */; };
 		C19693FE27E8578700BB008A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19693FD27E8578700BB008A /* SceneDelegate.swift */; };
 		C196940027E8578700BB008A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19693FF27E8578700BB008A /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C18F91B127E9E3FA00E04126 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		C19693F827E8578700BB008A /* OurTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19693FB27E8578700BB008A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C19693FD27E8578700BB008A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				C196940F27E859F700BB008A /* TeamTableViewCell.swift */,
 				C196941027E859F700BB008A /* TeamTableViewCell.xib */,
 				C196941327E864B600BB008A /* TeamModel.swift */,
+				C18F91B127E9E3FA00E04126 /* PopupViewController.swift */,
 			);
 			path = OurTeam;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				C196940027E8578700BB008A /* ViewController.swift in Sources */,
 				C19693FC27E8578700BB008A /* AppDelegate.swift in Sources */,
 				C19693FE27E8578700BB008A /* SceneDelegate.swift in Sources */,
+				C18F91B227E9E3FA00E04126 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

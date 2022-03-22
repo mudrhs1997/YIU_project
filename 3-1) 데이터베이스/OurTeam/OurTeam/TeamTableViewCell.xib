@@ -18,24 +18,24 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7z-sj-3YU">
-                        <rect key="frame" x="15" y="5" width="504" height="70"/>
+                        <rect key="frame" x="15" y="-10" width="504" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-xU-0xO">
-                                <rect key="frame" x="100" y="44" width="384" height="21"/>
+                                <rect key="frame" x="100" y="59" width="384" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3DB-OU-Ftx">
-                                <rect key="frame" x="20" y="5.5" width="60" height="59"/>
+                                <rect key="frame" x="20" y="20.5" width="60" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="LEG-Mk-egt"/>
                                     <constraint firstAttribute="width" constant="60" id="WFK-mP-mWM"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SO-EV-3qz">
-                                <rect key="frame" x="100" y="5" width="384" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="100" y="20" width="384" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -45,7 +45,7 @@
                             <constraint firstItem="g2z-xU-0xO" firstAttribute="leading" secondItem="3DB-OU-Ftx" secondAttribute="trailing" constant="20" id="59U-pM-7MC"/>
                             <constraint firstItem="1SO-EV-3qz" firstAttribute="top" secondItem="3DB-OU-Ftx" secondAttribute="top" id="5vU-iC-7sg"/>
                             <constraint firstAttribute="trailing" secondItem="g2z-xU-0xO" secondAttribute="trailing" constant="20" id="LCV-wl-fZi"/>
-                            <constraint firstAttribute="height" constant="70" id="O8m-H4-WSV"/>
+                            <constraint firstAttribute="height" constant="100" id="O8m-H4-WSV"/>
                             <constraint firstItem="1SO-EV-3qz" firstAttribute="leading" secondItem="3DB-OU-Ftx" secondAttribute="trailing" constant="20" id="W62-Zv-DQt"/>
                             <constraint firstAttribute="trailing" secondItem="1SO-EV-3qz" secondAttribute="trailing" constant="20" id="gfH-mV-dca"/>
                             <constraint firstItem="3DB-OU-Ftx" firstAttribute="centerY" secondItem="o7z-sj-3YU" secondAttribute="centerY" id="hm1-Qo-ApQ"/>
@@ -65,7 +65,7 @@
             <connections>
                 <outlet property="teamCellUIView" destination="o7z-sj-3YU" id="1Mq-q3-7UE"/>
             </connections>
-            <point key="canvasLocation" x="287" y="101"/>
+            <point key="canvasLocation" x="283" y="102"/>
         </tableViewCell>
     </objects>
     <resources>
