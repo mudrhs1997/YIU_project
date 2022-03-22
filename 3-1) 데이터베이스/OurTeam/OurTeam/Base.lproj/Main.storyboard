@@ -35,7 +35,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="pencil.tip.crop.circle.badge.plus" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-2J-Du6">
                                 <rect key="frame" x="344" y="792" width="50" height="50"/>
@@ -47,9 +47,6 @@
                                 <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="menu-burger"/>
-                                <connections>
-                                    <segue destination="asF-yl-Cto" kind="show" id="H0q-qO-4NY"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,51 +73,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77" y="115"/>
-        </scene>
-        <!--Popup View Controller-->
-        <scene sceneID="Mxe-e4-xL6">
-            <objects>
-                <viewController id="asF-yl-Cto" customClass="PopupViewController" customModule="OurTeam" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yVS-Aw-Yof">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSv-wN-8TY">
-                                <rect key="frame" x="344" y="772" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.60784313729999995" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="sWl-FP-CeC"/>
-                                    <constraint firstAttribute="height" constant="50" id="ucz-gf-eVc"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="menu-burger"/>
-                                <connections>
-                                    <action selector="dismissPopup:" destination="asF-yl-Cto" eventType="touchUpInside" id="1PU-nB-hqa"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Ddr-aU-VvY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="XSv-wN-8TY" secondAttribute="trailing" constant="20" id="EFB-HT-xig"/>
-                            <constraint firstItem="Ddr-aU-VvY" firstAttribute="bottom" secondItem="XSv-wN-8TY" secondAttribute="bottom" constant="20" id="gaQ-Il-ctW"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="tiD-4F-F45"/>
-                    <connections>
-                        <outlet property="popupButton" destination="XSv-wN-8TY" id="oow-lK-DLZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fnn-yn-jry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="757" y="115"/>
+            <point key="canvasLocation" x="158" y="67"/>
         </scene>
     </scenes>
     <resources>
         <image name="menu-burger" width="20" height="20"/>
-        <image name="pencil.tip.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
+        <image name="plus" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
