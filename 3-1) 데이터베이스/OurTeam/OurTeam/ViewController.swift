@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var popupButton: UIButton!
     
+    @IBOutlet weak var mainLabel: UILabel!
+    
     @IBOutlet weak var teamTableView: UITableView! {
         didSet {
             teamTableView.delegate = self
@@ -22,6 +24,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        mainLabel.text = "My Team"
+        
         teamTableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "teamCell")
         
         teamTableView.layer.cornerRadius = 20
