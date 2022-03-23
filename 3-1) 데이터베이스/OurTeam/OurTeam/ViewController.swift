@@ -51,6 +51,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return teamCell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let teamViewController = self.storyboard?.instantiateViewController(withIdentifier: "TeamMainVeiwController")
+        
+        self.navigationController?.pushViewController(teamViewController!, animated: true)
+    }
 
 }
 

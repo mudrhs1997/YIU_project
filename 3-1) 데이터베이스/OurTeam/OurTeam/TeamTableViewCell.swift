@@ -10,11 +10,14 @@ import UIKit
 class TeamTableViewCell: UITableViewCell {
 
     @IBOutlet weak var teamCellUIView: UIView!
+    @IBOutlet weak var teamImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         teamCellUIView.layer.cornerRadius = 20
+        
+        teamImage.layer.cornerRadius = teamImage.bounds.width / 2
         
         makeShadow()
         

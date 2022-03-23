@@ -71,6 +71,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="teamCellUIView" destination="o7z-sj-3YU" id="1Mq-q3-7UE"/>
+                <outlet property="teamImage" destination="3DB-OU-Ftx" id="Uwh-1C-htj"/>
             </connections>
             <point key="canvasLocation" x="278" y="82"/>
         </tableViewCell>

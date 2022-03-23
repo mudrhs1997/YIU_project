@@ -11,6 +11,8 @@
 		C18F91CB27EA1FFF00E04126 /* NanumSquareRoundOTFB.otf in Resources */ = {isa = PBXBuildFile; fileRef = C18F91C727EA1FFF00E04126 /* NanumSquareRoundOTFB.otf */; };
 		C18F91CC27EA1FFF00E04126 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C18F91C827EA1FFF00E04126 /* NanumSquareRoundEB.ttf */; };
 		C18F91CD27EA1FFF00E04126 /* NanumSquareRoundOTFEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = C18F91C927EA1FFF00E04126 /* NanumSquareRoundOTFEB.otf */; };
+		C18F91D027EB477F00E04126 /* TeamMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F91CE27EB477F00E04126 /* TeamMainViewController.swift */; };
+		C18F91D327EB5C5300E04126 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F91D227EB5C5300E04126 /* NoticeViewController.swift */; };
 		C19693FC27E8578700BB008A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19693FB27E8578700BB008A /* AppDelegate.swift */; };
 		C19693FE27E8578700BB008A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19693FD27E8578700BB008A /* SceneDelegate.swift */; };
 		C196940027E8578700BB008A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19693FF27E8578700BB008A /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 		C18F91C727EA1FFF00E04126 /* NanumSquareRoundOTFB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFB.otf; sourceTree = "<group>"; };
 		C18F91C827EA1FFF00E04126 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
 		C18F91C927EA1FFF00E04126 /* NanumSquareRoundOTFEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFEB.otf; sourceTree = "<group>"; };
+		C18F91CE27EB477F00E04126 /* TeamMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMainViewController.swift; sourceTree = "<group>"; };
+		C18F91D227EB5C5300E04126 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		C19693F827E8578700BB008A /* OurTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19693FB27E8578700BB008A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C19693FD27E8578700BB008A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				C196940F27E859F700BB008A /* TeamTableViewCell.swift */,
 				C196941027E859F700BB008A /* TeamTableViewCell.xib */,
 				C196941327E864B600BB008A /* TeamModel.swift */,
+				C18F91CE27EB477F00E04126 /* TeamMainViewController.swift */,
+				C18F91D227EB5C5300E04126 /* NoticeViewController.swift */,
 				C18F91C527EA1FFF00E04126 /* nanum-square-round */,
 			);
 			path = OurTeam;
@@ -174,6 +180,8 @@
 			files = (
 				C196941127E859F700BB008A /* TeamTableViewCell.swift in Sources */,
 				C196941427E864B600BB008A /* TeamModel.swift in Sources */,
+				C18F91D027EB477F00E04126 /* TeamMainViewController.swift in Sources */,
+				C18F91D327EB5C5300E04126 /* NoticeViewController.swift in Sources */,
 				C196940027E8578700BB008A /* ViewController.swift in Sources */,
 				C19693FC27E8578700BB008A /* AppDelegate.swift in Sources */,
 				C19693FE27E8578700BB008A /* SceneDelegate.swift in Sources */,
