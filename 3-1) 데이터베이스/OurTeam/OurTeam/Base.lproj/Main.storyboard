@@ -103,22 +103,20 @@
                                             <constraint firstAttribute="width" constant="80" id="g6k-0m-Oth"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8.@@@ (FW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BC1-M0-DTj">
-                                        <rect key="frame" x="25" y="48" width="172" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.@@@ (FW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BC1-M0-DTj">
+                                        <rect key="frame" x="25" y="50" width="364" height="30"/>
                                         <fontDescription key="fontDescription" name="NanumSquareRoundOTFB" family="NanumSquareRoundOTF" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-bf-lRX">
-                                        <rect key="frame" x="115" y="-30" width="289" height="31"/>
+                                        <rect key="frame" x="115" y="-35" width="289" height="31"/>
                                         <fontDescription key="fontDescription" name="NanumSquareRoundOTFB" family="NanumSquareRoundOTF" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtP-Qg-5ha">
-                                        <rect key="frame" x="42" y="128" width="323" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtP-Qg-5ha">
+                                        <rect key="frame" x="41.5" y="110" width="331" height="31"/>
                                         <color key="backgroundColor" red="0.074509803920000006" green="0.60784313729999995" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="일정">
@@ -131,10 +129,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="n4j-bf-lRX" firstAttribute="top" secondItem="qvs-bF-r7T" secondAttribute="top" constant="-30" id="6pT-iL-W11"/>
+                                    <constraint firstItem="n4j-bf-lRX" firstAttribute="top" secondItem="qvs-bF-r7T" secondAttribute="top" constant="-35" id="6pT-iL-W11"/>
+                                    <constraint firstItem="BtP-Qg-5ha" firstAttribute="centerX" secondItem="qvs-bF-r7T" secondAttribute="centerX" id="7aQ-pK-9it"/>
+                                    <constraint firstItem="BC1-M0-DTj" firstAttribute="leading" secondItem="qvs-bF-r7T" secondAttribute="leading" constant="25" id="FTL-j2-KbD"/>
+                                    <constraint firstAttribute="trailing" secondItem="BC1-M0-DTj" secondAttribute="trailing" constant="25" id="GjS-oe-f8l"/>
                                     <constraint firstAttribute="trailing" secondItem="n4j-bf-lRX" secondAttribute="trailing" constant="10" id="Gvh-ZB-wOa"/>
+                                    <constraint firstItem="BtP-Qg-5ha" firstAttribute="width" secondItem="qvs-bF-r7T" secondAttribute="width" multiplier="0.8" id="JiI-u5-Reg"/>
                                     <constraint firstItem="e7b-HC-V1T" firstAttribute="top" secondItem="qvs-bF-r7T" secondAttribute="top" constant="-60" id="guh-VS-whQ"/>
                                     <constraint firstItem="e7b-HC-V1T" firstAttribute="leading" secondItem="qvs-bF-r7T" secondAttribute="leading" constant="25" id="mtD-m9-IAz"/>
+                                    <constraint firstItem="BC1-M0-DTj" firstAttribute="top" secondItem="e7b-HC-V1T" secondAttribute="bottom" constant="30" id="o6a-ol-rDc"/>
+                                    <constraint firstItem="BtP-Qg-5ha" firstAttribute="top" secondItem="BC1-M0-DTj" secondAttribute="bottom" constant="30" id="vgL-8s-044"/>
                                     <constraint firstItem="n4j-bf-lRX" firstAttribute="leading" secondItem="e7b-HC-V1T" secondAttribute="trailing" constant="10" id="zl5-Oo-ApD"/>
                                 </constraints>
                             </view>
