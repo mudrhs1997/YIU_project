@@ -9,11 +9,18 @@ import UIKit
 
 class TeamMainViewController: UIViewController {
 
+    @IBOutlet weak var scheduleButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        makeButton()
         // Do any additional setup after loading the view.
+    }
+    
+    func makeButton() {
+        scheduleButton.layer.cornerRadius = 10
     }
 
     

@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let teamViewController = self.storyboard?.instantiateViewController(withIdentifier: "TeamMainVeiwController")
+        let teamViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController")
         
         self.navigationController?.pushViewController(teamViewController!, animated: true)
     }
