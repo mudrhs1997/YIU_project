@@ -23,6 +23,8 @@
 		C196941127E859F700BB008A /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196940F27E859F700BB008A /* TeamTableViewCell.swift */; };
 		C196941227E859F700BB008A /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C196941027E859F700BB008A /* TeamTableViewCell.xib */; };
 		C196941427E864B600BB008A /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196941327E864B600BB008A /* TeamModel.swift */; };
+		C196D1DC27F20F7C00AB87C1 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C196D1DA27F20F7B00AB87C1 /* MainTableViewCell.swift */; };
+		C196D1DD27F20F7C00AB87C1 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C196D1DB27F20F7C00AB87C1 /* MainTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		C196940F27E859F700BB008A /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		C196941027E859F700BB008A /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
 		C196941327E864B600BB008A /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		C196D1DA27F20F7B00AB87C1 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		C196D1DB27F20F7C00AB87C1 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				C18F91D227EB5C5300E04126 /* NoticeViewController.swift */,
 				C18F91D427F1E5BC00E04126 /* MainTabBarController.swift */,
 				C18F91C527EA1FFF00E04126 /* nanum-square-round */,
+				C196D1DA27F20F7B00AB87C1 /* MainTableViewCell.swift */,
+				C196D1DB27F20F7C00AB87C1 /* MainTableViewCell.xib */,
 			);
 			path = OurTeam;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C196D1DD27F20F7C00AB87C1 /* MainTableViewCell.xib in Resources */,
 				C18F91CD27EA1FFF00E04126 /* NanumSquareRoundOTFEB.otf in Resources */,
 				C18F91CB27EA1FFF00E04126 /* NanumSquareRoundOTFB.otf in Resources */,
 				C18F91CC27EA1FFF00E04126 /* NanumSquareRoundEB.ttf in Resources */,
@@ -182,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C196941127E859F700BB008A /* TeamTableViewCell.swift in Sources */,
+				C196D1DC27F20F7C00AB87C1 /* MainTableViewCell.swift in Sources */,
 				C196941427E864B600BB008A /* TeamModel.swift in Sources */,
 				C18F91D527F1E5BC00E04126 /* MainTabBarController.swift in Sources */,
 				C18F91D027EB477F00E04126 /* TeamMainViewController.swift in Sources */,

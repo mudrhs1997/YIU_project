@@ -94,49 +94,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5O6-Mw-sMx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtP-Qg-5ha">
-                                        <rect key="frame" x="23" y="150" width="368" height="40"/>
-                                        <color key="backgroundColor" red="0.074509803920000006" green="0.60784313729999995" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="aVc-kO-tDS"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="공지사항">
-                                            <fontDescription key="titleFontDescription" name="NanumSquareRoundOTFB" family="NanumSquareRoundOTF" pointSize="20"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="showNotice:" destination="Es7-Cn-O3D" eventType="touchUpInside" id="GqX-pL-pyg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ii-ng-afg">
-                                        <rect key="frame" x="23" y="210" width="368" height="40"/>
-                                        <color key="backgroundColor" red="0.074509803920000006" green="0.60784313729999995" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="공지사항">
-                                            <fontDescription key="titleFontDescription" name="NanumSquareRoundOTFB" family="NanumSquareRoundOTF" pointSize="20"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="showNotice:" destination="Es7-Cn-O3D" eventType="touchUpInside" id="TKV-8q-SYm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0H-eY-2H5">
-                                        <rect key="frame" x="23" y="270" width="368" height="40"/>
-                                        <color key="backgroundColor" red="0.074509803920000006" green="0.60784313729999995" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="공지사항">
-                                            <fontDescription key="titleFontDescription" name="NanumSquareRoundOTFB" family="NanumSquareRoundOTF" pointSize="20"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="showNotice:" destination="Es7-Cn-O3D" eventType="touchUpInside" id="wUO-qm-73K"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bif-g2-XeH">
-                                        <rect key="frame" x="10" y="10" width="394" height="130"/>
+                                        <rect key="frame" x="10" y="40" width="394" height="130"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rgb-mar18" translatesAutoresizingMaskIntoConstraints="NO" id="e7b-HC-V1T">
                                                 <rect key="frame" x="8" y="8" width="80" height="80"/>
@@ -162,30 +123,27 @@
                                             <constraint firstAttribute="height" constant="130" id="yZf-sH-sZP"/>
                                         </constraints>
                                     </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jrf-zh-6AS">
+                                        <rect key="frame" x="0.0" y="170" width="414" height="643"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Bif-g2-XeH" secondAttribute="trailing" constant="10" id="54N-6T-rCm"/>
-                                    <constraint firstItem="Bif-g2-XeH" firstAttribute="top" secondItem="5O6-Mw-sMx" secondAttribute="top" constant="10" id="5Th-BF-qX4"/>
+                                    <constraint firstItem="Bif-g2-XeH" firstAttribute="top" secondItem="5O6-Mw-sMx" secondAttribute="top" constant="40" id="5Th-BF-qX4"/>
                                     <constraint firstItem="Bif-g2-XeH" firstAttribute="leading" secondItem="5O6-Mw-sMx" secondAttribute="leading" constant="10" id="A0j-7D-Wds"/>
-                                    <constraint firstItem="C0H-eY-2H5" firstAttribute="centerX" secondItem="5O6-Mw-sMx" secondAttribute="centerX" id="BTW-6E-WUD"/>
-                                    <constraint firstItem="BtP-Qg-5ha" firstAttribute="top" secondItem="Bif-g2-XeH" secondAttribute="bottom" constant="10" id="GVD-uX-Hwh"/>
-                                    <constraint firstItem="8Ii-ng-afg" firstAttribute="height" secondItem="BtP-Qg-5ha" secondAttribute="height" id="MU0-uu-66Q"/>
-                                    <constraint firstItem="BtP-Qg-5ha" firstAttribute="width" secondItem="5O6-Mw-sMx" secondAttribute="width" multiplier="0.89" id="V0P-az-b31"/>
-                                    <constraint firstItem="8Ii-ng-afg" firstAttribute="centerX" secondItem="5O6-Mw-sMx" secondAttribute="centerX" id="WBN-Qu-C4C"/>
-                                    <constraint firstItem="8Ii-ng-afg" firstAttribute="top" secondItem="BtP-Qg-5ha" secondAttribute="bottom" constant="20" id="c3m-bT-YTM"/>
-                                    <constraint firstItem="C0H-eY-2H5" firstAttribute="width" secondItem="BtP-Qg-5ha" secondAttribute="width" id="qIv-qi-x2h"/>
-                                    <constraint firstItem="C0H-eY-2H5" firstAttribute="top" secondItem="8Ii-ng-afg" secondAttribute="bottom" constant="20" id="t7r-uL-IxO"/>
-                                    <constraint firstItem="C0H-eY-2H5" firstAttribute="height" secondItem="BtP-Qg-5ha" secondAttribute="height" id="tYk-Gk-CFt"/>
-                                    <constraint firstItem="BtP-Qg-5ha" firstAttribute="centerX" secondItem="5O6-Mw-sMx" secondAttribute="centerX" id="vsg-Tv-LeG"/>
-                                    <constraint firstItem="8Ii-ng-afg" firstAttribute="width" secondItem="BtP-Qg-5ha" secondAttribute="width" id="wBw-WV-Nc5"/>
+                                    <constraint firstItem="Jrf-zh-6AS" firstAttribute="leading" secondItem="5O6-Mw-sMx" secondAttribute="leading" id="N68-Dr-3LJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jrf-zh-6AS" secondAttribute="bottom" id="RCb-lN-TPv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jrf-zh-6AS" secondAttribute="trailing" id="opY-ZD-cBX"/>
+                                    <constraint firstItem="Jrf-zh-6AS" firstAttribute="top" secondItem="Bif-g2-XeH" secondAttribute="bottom" id="qtY-Tr-TnA"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AJM-it-Ikt"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="5O6-Mw-sMx" secondAttribute="bottom" id="0We-4n-PYx"/>
+                            <constraint firstItem="AJM-it-Ikt" firstAttribute="bottom" secondItem="5O6-Mw-sMx" secondAttribute="bottom" id="0We-4n-PYx"/>
                             <constraint firstItem="5O6-Mw-sMx" firstAttribute="leading" secondItem="AJM-it-Ikt" secondAttribute="leading" id="15z-nk-DnP"/>
                             <constraint firstItem="5O6-Mw-sMx" firstAttribute="top" secondItem="nuM-qt-1Ym" secondAttribute="top" id="Euk-KH-tPd"/>
                             <constraint firstItem="5O6-Mw-sMx" firstAttribute="trailing" secondItem="AJM-it-Ikt" secondAttribute="trailing" id="qK7-oy-4Te"/>
@@ -193,9 +151,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" id="uX4-Sm-Zgg"/>
                     <navigationItem key="navigationItem" id="wy3-oJ-aOZ"/>
-                    <connections>
-                        <outlet property="scheduleButton" destination="BtP-Qg-5ha" id="T2L-0M-kiL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhg-xf-jW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

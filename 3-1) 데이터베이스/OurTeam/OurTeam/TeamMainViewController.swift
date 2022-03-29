@@ -7,9 +7,12 @@
 
 import UIKit
 
-class TeamMainViewController: UIViewController {
+class TeamMainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    
 
-    @IBOutlet weak var scheduleButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +23,7 @@ class TeamMainViewController: UIViewController {
     }
     
     func makeButton() {
-        scheduleButton.layer.cornerRadius = 10
+        
     }
 
     
@@ -31,6 +34,21 @@ class TeamMainViewController: UIViewController {
         
         self.navigationController?.pushViewController(pushVC, animated: true)
         
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let mainCell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath) as! TeamTableViewCell
+        
+        mainCell.selectionStyle = .none
+        
+        
+        
+        
+        return mainCell
     }
 
 }
