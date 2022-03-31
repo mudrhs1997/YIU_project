@@ -9,15 +9,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="MainTableViewCell" customModule="OurTeam" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="342" height="130"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" rowHeight="133" id="KGk-i7-Jjw" customClass="MainTableViewCell" customModule="OurTeam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="133"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="342" height="130"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="133"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP2-xG-AMZ">
-                        <rect key="frame" x="10" y="10" width="322" height="40"/>
+                        <rect key="frame" x="10" y="30" width="322" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="hRK-4F-GYx"/>
                         </constraints>
@@ -32,13 +32,15 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="WP2-xG-AMZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Itg-La-s5b"/>
+                    <constraint firstAttribute="bottom" secondItem="WP2-xG-AMZ" secondAttribute="bottom" constant="30" id="Np9-WH-nn2"/>
                     <constraint firstAttribute="trailing" secondItem="WP2-xG-AMZ" secondAttribute="trailing" constant="10" id="vI2-94-bJS"/>
-                    <constraint firstItem="WP2-xG-AMZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wkH-zs-1FO"/>
+                    <constraint firstItem="WP2-xG-AMZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="vnc-my-CDZ"/>
                     <constraint firstItem="WP2-xG-AMZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yGh-pI-hfd"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="107.24637681159422" y="148.66071428571428"/>
+            <point key="canvasLocation" x="107.24637681159422" y="149.66517857142856"/>
         </tableViewCell>
     </objects>
 </document>
