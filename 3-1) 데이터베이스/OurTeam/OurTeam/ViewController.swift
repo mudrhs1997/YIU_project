@@ -10,8 +10,10 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
-    @IBOutlet weak var popupButton: UIButton!
     
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profileUIView: UIView!
+    @IBOutlet weak var popupButton: UIButton!
     @IBOutlet weak var mainLabel: UILabel!
     
     @IBOutlet weak var teamTableView: UITableView! {
@@ -32,10 +34,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         teamTableView.layer.cornerRadius = 20
         teamTableView.separatorStyle = .none
         
+        
+        
+        
         popupButton.layer.cornerRadius = popupButton.bounds.size.width / 2
+        
+        makeProfileView()
 
         
     }
+    
+    func makeProfileView() {
+        profileImage.layer.cornerRadius = profileImage.bounds.size.width / 2
+    }
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2

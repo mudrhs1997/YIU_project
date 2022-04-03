@@ -7,18 +7,10 @@
 
 import UIKit
 
-class TeamMainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TeamMainViewController: UIViewController {
     
     
     @IBOutlet weak var teamBox: UIView!
-    
-
-    @IBOutlet weak var mainTableView: UITableView! {
-        didSet {
-            mainTableView.delegate = self
-            mainTableView.dataSource = self
-        }
-    }
     
     
     override func viewDidLoad() {
@@ -31,7 +23,7 @@ class TeamMainViewController: UIViewController, UITableViewDelegate, UITableView
         teamBox.layer.shadowOffset = CGSize(width: 0, height: 0)
         teamBox.layer.shadowPath = nil
         
-        mainTableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "mainCell")
+        
         
         // Do any additional setup after loading the view.
     }
@@ -40,27 +32,5 @@ class TeamMainViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
 
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let mainCell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! MainTableViewCell
-        
-        mainCell.selectionStyle = .none
-        
-        
-        
-        
-        return mainCell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let teamViewController = self.storyboard?.instantiateViewController(withIdentifier: "NoticeViewController")
-        
-        self.navigationController?.pushViewController(teamViewController!, animated: true)
-    }
 
 }

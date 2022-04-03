@@ -28,7 +28,7 @@
                         <rect key="frame" x="15" y="-10" width="504" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원수 : 23 (2022.2.22)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-xU-0xO">
-                                <rect key="frame" x="100" y="64.5" width="384" height="15.5"/>
+                                <rect key="frame" x="100" y="61.5" width="384" height="15.5"/>
                                 <fontDescription key="fontDescription" name="NanumSquareRoundB" family="NanumSquareRound" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Team Overlap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SO-EV-3qz">
-                                <rect key="frame" x="100" y="28" width="384" height="31"/>
+                                <rect key="frame" x="100" y="29.5" width="384" height="31"/>
                                 <fontDescription key="fontDescription" name="NanumSquareRoundOTFB" family="NanumSquareRoundOTF" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,17 +50,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="g2z-xU-0xO" firstAttribute="leading" secondItem="3DB-OU-Ftx" secondAttribute="trailing" constant="20" id="59U-pM-7MC"/>
-                            <constraint firstItem="1SO-EV-3qz" firstAttribute="top" secondItem="3DB-OU-Ftx" secondAttribute="top" constant="8" id="5vU-iC-7sg"/>
                             <constraint firstAttribute="trailing" secondItem="g2z-xU-0xO" secondAttribute="trailing" constant="20" id="LCV-wl-fZi"/>
                             <constraint firstAttribute="height" constant="100" id="O8m-H4-WSV"/>
+                            <constraint firstItem="1SO-EV-3qz" firstAttribute="centerY" secondItem="3DB-OU-Ftx" secondAttribute="centerY" constant="-5" id="Rmp-fM-lXL"/>
                             <constraint firstItem="1SO-EV-3qz" firstAttribute="leading" secondItem="3DB-OU-Ftx" secondAttribute="trailing" constant="20" id="W62-Zv-DQt"/>
                             <constraint firstAttribute="trailing" secondItem="1SO-EV-3qz" secondAttribute="trailing" constant="20" id="gfH-mV-dca"/>
+                            <constraint firstItem="g2z-xU-0xO" firstAttribute="top" secondItem="1SO-EV-3qz" secondAttribute="bottom" constant="1" id="hbx-HI-Uza"/>
                             <constraint firstItem="3DB-OU-Ftx" firstAttribute="centerY" secondItem="o7z-sj-3YU" secondAttribute="centerY" id="hm1-Qo-ApQ"/>
-                            <constraint firstItem="g2z-xU-0xO" firstAttribute="bottom" secondItem="3DB-OU-Ftx" secondAttribute="bottom" id="mEb-tr-GtJ"/>
                             <constraint firstItem="3DB-OU-Ftx" firstAttribute="leading" secondItem="o7z-sj-3YU" secondAttribute="leading" constant="20" id="ux0-Xn-kjL"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.30196078430000001" green="0.65098039220000004" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="o7z-sj-3YU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4FS-ma-Ppi"/>
                     <constraint firstItem="o7z-sj-3YU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EjQ-II-DjK"/>
@@ -73,7 +74,7 @@
                 <outlet property="teamCellUIView" destination="o7z-sj-3YU" id="1Mq-q3-7UE"/>
                 <outlet property="teamImage" destination="3DB-OU-Ftx" id="Uwh-1C-htj"/>
             </connections>
-            <point key="canvasLocation" x="278" y="82"/>
+            <point key="canvasLocation" x="276.81159420289856" y="81.696428571428569"/>
         </tableViewCell>
     </objects>
     <resources>

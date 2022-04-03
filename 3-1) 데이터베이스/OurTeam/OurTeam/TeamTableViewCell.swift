@@ -31,7 +31,7 @@ class TeamTableViewCell: UITableViewCell {
     
     func makeShadow() {
         teamCellUIView.layer.shadowColor = UIColor.black.cgColor
-        teamCellUIView.layer.shadowOpacity = 0.1
+        teamCellUIView.layer.shadowOpacity = 0.3
         teamCellUIView.layer.shadowRadius = 3
         teamCellUIView.layer.shadowOffset = CGSize(width: 0, height: 0)
         teamCellUIView.layer.shadowPath = nil
