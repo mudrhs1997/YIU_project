@@ -56,7 +56,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,9 +71,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let teamViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController")
+        let teamViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+        teamViewController.modalPresentationStyle = .fullScreen
         
-        self.navigationController?.pushViewController(teamViewController!, animated: true)
+        self.present(teamViewController, animated: true, completion: nil)
     }
 
 }

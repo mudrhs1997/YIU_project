@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15443F7280DAF8000E4601B /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15443F6280DAF8000E4601B /* RecordViewController.swift */; };
+		C15443FA280DB03D00E4601B /* RecordTabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15443F8280DB03D00E4601B /* RecordTabBarCollectionViewCell.swift */; };
 		C18F91CA27EA1FFF00E04126 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C18F91C627EA1FFF00E04126 /* NanumSquareRoundB.ttf */; };
 		C18F91CB27EA1FFF00E04126 /* NanumSquareRoundOTFB.otf in Resources */ = {isa = PBXBuildFile; fileRef = C18F91C727EA1FFF00E04126 /* NanumSquareRoundOTFB.otf */; };
 		C18F91CC27EA1FFF00E04126 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C18F91C827EA1FFF00E04126 /* NanumSquareRoundEB.ttf */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C15443F6280DAF8000E4601B /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		C15443F8280DB03D00E4601B /* RecordTabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTabBarCollectionViewCell.swift; sourceTree = "<group>"; };
 		C18F91C627EA1FFF00E04126 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
 		C18F91C727EA1FFF00E04126 /* NanumSquareRoundOTFB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFB.otf; sourceTree = "<group>"; };
 		C18F91C827EA1FFF00E04126 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
@@ -55,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C13C5BA72819124700BD74F2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				C18F91C527EA1FFF00E04126 /* nanum-square-round */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		C18F91C527EA1FFF00E04126 /* nanum-square-round */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +97,7 @@
 		C19693FA27E8578700BB008A /* OurTeam */ = {
 			isa = PBXGroup;
 			children = (
+				C13C5BA72819124700BD74F2 /* New Group */,
 				C19693FB27E8578700BB008A /* AppDelegate.swift */,
 				C19693FD27E8578700BB008A /* SceneDelegate.swift */,
 				C19693FF27E8578700BB008A /* ViewController.swift */,
@@ -97,7 +110,8 @@
 				C196941327E864B600BB008A /* TeamModel.swift */,
 				C18F91CE27EB477F00E04126 /* TeamMainViewController.swift */,
 				C18F91D427F1E5BC00E04126 /* MainTabBarController.swift */,
-				C18F91C527EA1FFF00E04126 /* nanum-square-round */,
+				C15443F6280DAF8000E4601B /* RecordViewController.swift */,
+				C15443F8280DB03D00E4601B /* RecordTabBarCollectionViewCell.swift */,
 			);
 			path = OurTeam;
 			sourceTree = "<group>";
@@ -181,10 +195,12 @@
 				C196941127E859F700BB008A /* TeamTableViewCell.swift in Sources */,
 				C196941427E864B600BB008A /* TeamModel.swift in Sources */,
 				C18F91D527F1E5BC00E04126 /* MainTabBarController.swift in Sources */,
+				C15443F7280DAF8000E4601B /* RecordViewController.swift in Sources */,
 				C18F91D027EB477F00E04126 /* TeamMainViewController.swift in Sources */,
 				C196940027E8578700BB008A /* ViewController.swift in Sources */,
 				C19693FC27E8578700BB008A /* AppDelegate.swift in Sources */,
 				C19693FE27E8578700BB008A /* SceneDelegate.swift in Sources */,
+				C15443FA280DB03D00E4601B /* RecordTabBarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

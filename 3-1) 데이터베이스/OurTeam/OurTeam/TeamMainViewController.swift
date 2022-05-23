@@ -23,6 +23,8 @@ class TeamMainViewController: UIViewController {
         teamBox.layer.shadowOffset = CGSize(width: 0, height: 0)
         teamBox.layer.shadowPath = nil
         
+        self.navigationController?.isNavigationBarHidden = true
+        
         
         
         // Do any additional setup after loading the view.
@@ -32,5 +34,8 @@ class TeamMainViewController: UIViewController {
         
     }
 
-
+    @IBAction func recordButton(_ sender: Any) {
+        
+    }
+    
 }
