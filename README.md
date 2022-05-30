@@ -123,3 +123,14 @@ Swift, SQLite을 이용해서 축구 팀 기록 관리 어플을 만들고자 �
     CREATE TABLE GAME (
     OPPONENT_TEAM TEXT NOT NULL
     );
+    
+    
+    
+<hr>
+
+# 제1 정규형을 만족 (원자성)
+# 제2 정규형을 만족 (완전 함수 종속)
+    TEAM, GAME, SCHEDULE이 완전 함수 종속됨
+# 제3 정규형 만족 (이행적 함수 종속)
+# 보이스/코드 정규형 만족
+
