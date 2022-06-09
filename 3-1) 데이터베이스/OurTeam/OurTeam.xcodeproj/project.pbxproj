@@ -59,14 +59,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C13C5BA72819124700BD74F2 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				C18F91C527EA1FFF00E04126 /* nanum-square-round */,
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		C18F91C527EA1FFF00E04126 /* nanum-square-round */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +67,8 @@
 				C18F91C827EA1FFF00E04126 /* NanumSquareRoundEB.ttf */,
 				C18F91C927EA1FFF00E04126 /* NanumSquareRoundOTFEB.otf */,
 			);
-			path = "nanum-square-round";
+			name = "nanum-square-round";
+			path = "New Group/nanum-square-round";
 			sourceTree = "<group>";
 		};
 		C19693EF27E8578700BB008A = {
@@ -97,7 +90,7 @@
 		C19693FA27E8578700BB008A /* OurTeam */ = {
 			isa = PBXGroup;
 			children = (
-				C13C5BA72819124700BD74F2 /* New Group */,
+				C1A2E87B284B2AA20014B428 /* New Group */,
 				C19693FB27E8578700BB008A /* AppDelegate.swift */,
 				C19693FD27E8578700BB008A /* SceneDelegate.swift */,
 				C19693FF27E8578700BB008A /* ViewController.swift */,
@@ -112,8 +105,16 @@
 				C18F91D427F1E5BC00E04126 /* MainTabBarController.swift */,
 				C15443F6280DAF8000E4601B /* RecordViewController.swift */,
 				C15443F8280DB03D00E4601B /* RecordTabBarCollectionViewCell.swift */,
+				C18F91C527EA1FFF00E04126 /* nanum-square-round */,
 			);
 			path = OurTeam;
+			sourceTree = "<group>";
+		};
+		C1A2E87B284B2AA20014B428 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
