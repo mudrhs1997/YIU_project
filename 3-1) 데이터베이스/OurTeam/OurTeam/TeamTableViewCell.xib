@@ -28,7 +28,7 @@
                         <rect key="frame" x="15" y="-10" width="504" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원수 : 23 (2022.2.22)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-xU-0xO">
-                                <rect key="frame" x="100" y="61.5" width="384" height="15.5"/>
+                                <rect key="frame" x="100" y="62.5" width="384" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NanumSquareRoundB" family="NanumSquareRound" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Team Overlap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SO-EV-3qz">
-                                <rect key="frame" x="100" y="29.5" width="384" height="31"/>
+                                <rect key="frame" x="100" y="28.5" width="384" height="33"/>
                                 <fontDescription key="fontDescription" name="NanumSquareRoundOTFB" family="NanumSquareRoundOTF" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
