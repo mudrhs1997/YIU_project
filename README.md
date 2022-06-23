@@ -4,7 +4,7 @@
 
 Swift, SQLite을 이용해서 축구 팀 기록 관리 어플을 만들고자 합니다.
 
-팀원들의 기록, 포메이션, 일정, 게시판, 영상관리 등의 기능을 구현합니다.
+팀원들의 기록, 팀, 일정 등의 기능을 구현합니다.
 
 
 
@@ -18,31 +18,19 @@ Swift, SQLite을 이용해서 축구 팀 기록 관리 어플을 만들고자 �
 
 - 회원
     - 이 어플을 이용하기 위해선 회원가입을 해야 한다.
-    - 회원은 아이디(이메일), 비밀번호, 이름을 입력해야 한다.
-    - 회원 가입 승인이 되기 전까지 활동은 제한된다.
+    - 회원은 아이디, 비밀번호, 이름을 입력해야 한다.
     - 회원은 하나 이상의 팀에 가입할 수 있다.
     
 - 팀
     - 팀은 여러 명의 팀원을 가질 수 있다.
     - 팀은 한 명의 단장을 가진다.
-    - 팀은 반드시 창단일자, 팀 이름, 멤버 수, 단장의 정보를 포함한다.
+    - 팀은 반드시 팀 id, 팀 이름, 팀마크를 포함한다.
     - 팀은 일정을 가질 수 있다.
     - 일정은 상대팀의 정보, 날짜를 가진다.
     
 - 팀원
-    - 팀원 정보는 반드시 등번호, 이름, 골, 어시스트, 출장횟수, 평점을 포함한다.
-    - 팀원은 등번호로 인식한다.
-
-- 기록
-    - 기록은 개인 기록, 팀 기록으로 나눈다.
-    - 팀 기록은 승리, 무승부, 패배를 가진다.
-    - 승무패 기록시에 상대팀의 정보도 포함한다.
-
-- 게시판
-    - 팀원은 게시글에 코멘트르 여러 개 작성 가능하고, 게시글은 단장만 작성할 수 있다.
-    - 게시글에 대한 글번호, 글제목, 글내용, 작성일자 정보를 유지해야 한다.
-    - 게시글은 글번호로 식별한다.
-
+    - 팀원 기록 반드시 이름, 골, 어시스트, 출장횟수을 포함한다.
+    - 팀원은 이름이로 인식한다.
 
 
     
@@ -53,11 +41,11 @@ Swift, SQLite을 이용해서 축구 팀 기록 관리 어플을 만들고자 �
 | 팀 | 창단일자, 팀이름, 멤버 수, 단장이름 |
 | 팀원 | 등번호, 이름, 골 , 어시스트, 출장횟수, 평점 |
 | 기록 | 팀 기록, 개인 기록, 상대팀 정보 |
-| 게시판 | 글번호, 글제목, 글내용, 작성일자 |
 | 일정 | 상대팀의 정보, 시간과 날짜 |
 
 | 관계 | 관계에 참여하는 개체 | 관계 유형 | 속성 |
 | --- | --- | --- | --- |
+| 팀 | 유저,팀 | 다대다 | 유저id,팀id |
 | 관리 | 팀, 팀원 | 일대일 | 이름 |
 | 기록 | 일정, 팀원 | 다대다 | 골, 어시스트, 출장횟수, 평점 |
 | 작성 | 팀원, 게시판 | 일대다 |  |
@@ -67,70 +55,33 @@ Swift, SQLite을 이용해서 축구 팀 기록 관리 어플을 만들고자 �
 
 -USER
 
-    CREATE TABLE USER (
-    USER_ID TEXT NOT NULL PRIMARY KEY,
-    USER_PASSWORD TEXT NOT NULL,
-    USER_NAME TEXT NOT NULL,
-    );
+    CREATE TABLE User( id TEXT NOT NULL PRIMARY KEY, password TEXT NOT NULL, name TEXT NOT NULL )
     
     
--BOARD
+-USERTEAM
 
-    CREATE TABLE BOARD (
-    BOARD_NUM INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    BOARD_TITLE TEXT NOT NULL,
-    BOARD_DETAIL TEXT,
-    DETAIL_DATE TEXT
-    );
-    
+    CREATE TABLE UserTeam( user_id TEXT NOT NULL PRIMARY KEY,
+    team_id TEXT NOT NULL,
+    CONSTRAINT userid_fk FOREIGN KEY (user_id) REFERENCES User(id)
+    , CONSTRAINT teamid_fk FOREIGN KEY (team_id) REFERENCES TEAM(id) )
     
     
 -TEAM
 
-    CREATE TABLE TEAM (
-    TEAM_NAME TEXT NOT NULL,
-    TEAM_DATE TEXT,
-    MEMBER_NUM INT
-    );
+    CREATE TABLE Team( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, image TEXT NOT NULL DEFAULT 'swift' )
     
--MEMBER
+-Stats
 
-    CREATE TABLE MEMBER (
-    MEMBER_NUMBER INT NOT NULL PRIMARY KEY,
-    MEMBER_NAME TEXT NOT NULL,
-
-    MEMBER_GOAL INT,
-    MEMBER_ASSIST INT,
-    MEMBER_PERFORM INT
-    );
+    CREATE TABLE Stats( team_id INTEGER NOT NULL PRIMARY KEY, name Text NOT NULL,
+    goals INTEGER DEFAULT 0,
+    assists INTEGER DEFAULT 0,
+    games INTEGER DEFAULT 0,
+    CONSTRAINT teamid_fk FOREIGN KEY (team_id) REFERENCES TEAM(id) 
+    )
     
     
 -SCHEDULE
 
-    CREATE TABLE SCHEDULE (
-    TEAM_NAME TEXT NOT NULL,
-    OPPONENT_TEAM TEXT NOT NULL,
-    GAME_DATE TEXT,
-    GAME_LOCATION TEXT,
-    FOREIGN KEY(TEAM_NAME)
-    REFERENCES TEAM(TEAM_NAME) ON UPDATE CASCADE,
-    FOREIGN KEY(OPPONENT_TEAM)
-    REFERENCES GAME(OPPONENT_TEAM) ON UPDATE CASCADE
-    );
-    
--GAME
-
-    CREATE TABLE GAME (
-    OPPONENT_TEAM TEXT NOT NULL
-    );
+    CREATE TABLE Schedule( opp_name TEXT NOT NULL PRIMARY KEY, date TEXT DEFAULT '1999-99-99' )
     
     
-    
-<hr>
-
-### - 제1 정규형을 만족 (원자성)
-### - 제2 정규형을 만족 (완전 함수 종속)
-    TEAM, GAME, SCHEDULE이 완전 함수 종속됨
-### - 제3 정규형 만족 (이행적 함수 종속)
-### - 보이스/코드 정규형 만족
-
