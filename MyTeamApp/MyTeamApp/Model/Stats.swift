@@ -8,12 +8,10 @@
 import Foundation
 
 struct Stats: Codable {
-    
-    var games: Int
-    var wins: Int
-    var draws: Int
-    var loses: Int
+    var team_id: Int
+    var name: String
     var goals: Int
     var assists: Int
+    var games: Int
     
 }

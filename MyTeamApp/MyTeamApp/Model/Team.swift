@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct TeamModel: Codable {
+struct Team: Codable {
     
+    var team_Id: Int
     var image: String
     var name: String
     

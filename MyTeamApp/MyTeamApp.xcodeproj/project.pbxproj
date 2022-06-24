@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C129F9E52862A59E00869DB5 /* StatsHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129F9E42862A59D00869DB5 /* StatsHeaderUIView.swift */; };
+		C129F9E728631A9C00869DB5 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129F9E628631A9C00869DB5 /* Schedule.swift */; };
+		C129F9E928632AC000869DB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129F9E828632AC000869DB5 /* User.swift */; };
+		C16735362863DE2F00DBD4DA /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16735352863DE2F00DBD4DA /* BoardViewController.swift */; };
+		C16735382863E03000DBD4DA /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16735372863E03000DBD4DA /* Board.swift */; };
+		C167353C2863E79500DBD4DA /* TeamUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167353B2863E79500DBD4DA /* TeamUser.swift */; };
+		C167353E286428E400DBD4DA /* CreateTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167353D286428E400DBD4DA /* CreateTeamViewController.swift */; };
+		C16735422864339900DBD4DA /* ScheduleCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16735412864339900DBD4DA /* ScheduleCreateViewController.swift */; };
+		C1673544286440D800DBD4DA /* StatsAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1673543286440D800DBD4DA /* StatsAddViewController.swift */; };
+		C16735462864566E00DBD4DA /* EditStatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16735452864566E00DBD4DA /* EditStatViewController.swift */; };
 		C1844AA72858172D0010634B /* TeamSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1844AA62858172D0010634B /* TeamSelectViewController.swift */; };
 		C1844AA928581D5C0010634B /* TeamSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1844AA828581D5C0010634B /* TeamSelectTableViewCell.swift */; };
 		C1A2E889284B2BAA0014B428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2E888284B2BAA0014B428 /* AppDelegate.swift */; };
@@ -16,7 +26,7 @@
 		C1A2E895284B2BAC0014B428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A2E893284B2BAC0014B428 /* LaunchScreen.storyboard */; };
 		C1A2E89D284B2DF70014B428 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2E89C284B2DF70014B428 /* SignInViewController.swift */; };
 		C1A2E89F284B2E020014B428 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2E89E284B2E020014B428 /* SignUpViewController.swift */; };
-		C1A305D428596D85006138F4 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A305D328596D85006138F4 /* TeamModel.swift */; };
+		C1A305D428596D85006138F4 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A305D328596D85006138F4 /* Team.swift */; };
 		C1A305D828598F64006138F4 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A305D728598F64006138F4 /* DBHelper.swift */; };
 		C1A305DA2859F80F006138F4 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A305D92859F80F006138F4 /* ScheduleViewController.swift */; };
 		C1A305DC2859F871006138F4 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A305DB2859F871006138F4 /* StatsViewController.swift */; };
@@ -26,6 +36,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C129F9E42862A59D00869DB5 /* StatsHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsHeaderUIView.swift; sourceTree = "<group>"; };
+		C129F9E628631A9C00869DB5 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		C129F9E828632AC000869DB5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C16735352863DE2F00DBD4DA /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		C16735372863E03000DBD4DA /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		C167353B2863E79500DBD4DA /* TeamUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUser.swift; sourceTree = "<group>"; };
+		C167353D286428E400DBD4DA /* CreateTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTeamViewController.swift; sourceTree = "<group>"; };
+		C16735412864339900DBD4DA /* ScheduleCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCreateViewController.swift; sourceTree = "<group>"; };
+		C1673543286440D800DBD4DA /* StatsAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsAddViewController.swift; sourceTree = "<group>"; };
+		C16735452864566E00DBD4DA /* EditStatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStatViewController.swift; sourceTree = "<group>"; };
 		C1844AA62858172D0010634B /* TeamSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSelectViewController.swift; sourceTree = "<group>"; };
 		C1844AA828581D5C0010634B /* TeamSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSelectTableViewCell.swift; sourceTree = "<group>"; };
 		C1A2E885284B2BAA0014B428 /* MyTeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +57,7 @@
 		C1A2E896284B2BAC0014B428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A2E89C284B2DF70014B428 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C1A2E89E284B2E020014B428 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		C1A305D328596D85006138F4 /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		C1A305D328596D85006138F4 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		C1A305D728598F64006138F4 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		C1A305D92859F80F006138F4 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		C1A305DB2859F871006138F4 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +83,7 @@
 				C1844AA828581D5C0010634B /* TeamSelectTableViewCell.swift */,
 				C1A305DD2859FD76006138F4 /* StatsTableViewCell.swift */,
 				C1A305DF2859FD83006138F4 /* ScheduleTableViewCell.swift */,
+				C129F9E42862A59D00869DB5 /* StatsHeaderUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +126,11 @@
 				C1844AA62858172D0010634B /* TeamSelectViewController.swift */,
 				C1A305D92859F80F006138F4 /* ScheduleViewController.swift */,
 				C1A305DB2859F871006138F4 /* StatsViewController.swift */,
+				C16735352863DE2F00DBD4DA /* BoardViewController.swift */,
+				C167353D286428E400DBD4DA /* CreateTeamViewController.swift */,
+				C16735412864339900DBD4DA /* ScheduleCreateViewController.swift */,
+				C1673543286440D800DBD4DA /* StatsAddViewController.swift */,
+				C16735452864566E00DBD4DA /* EditStatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,8 +138,12 @@
 		C1A305D228596CA4006138F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C1A305D328596D85006138F4 /* TeamModel.swift */,
+				C1A305D328596D85006138F4 /* Team.swift */,
 				C1A305E12859FDAD006138F4 /* Stats.swift */,
+				C129F9E628631A9C00869DB5 /* Schedule.swift */,
+				C129F9E828632AC000869DB5 /* User.swift */,
+				C16735372863E03000DBD4DA /* Board.swift */,
+				C167353B2863E79500DBD4DA /* TeamUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,15 +242,25 @@
 				C1A305DE2859FD76006138F4 /* StatsTableViewCell.swift in Sources */,
 				C1A305E22859FDAD006138F4 /* Stats.swift in Sources */,
 				C1A305DC2859F871006138F4 /* StatsViewController.swift in Sources */,
+				C16735422864339900DBD4DA /* ScheduleCreateViewController.swift in Sources */,
 				C1A2E88D284B2BAA0014B428 /* HomeViewController.swift in Sources */,
-				C1A305D428596D85006138F4 /* TeamModel.swift in Sources */,
+				C129F9E728631A9C00869DB5 /* Schedule.swift in Sources */,
+				C16735462864566E00DBD4DA /* EditStatViewController.swift in Sources */,
+				C129F9E928632AC000869DB5 /* User.swift in Sources */,
+				C1A305D428596D85006138F4 /* Team.swift in Sources */,
 				C1A2E889284B2BAA0014B428 /* AppDelegate.swift in Sources */,
 				C1A305D828598F64006138F4 /* DBHelper.swift in Sources */,
 				C1A305DA2859F80F006138F4 /* ScheduleViewController.swift in Sources */,
 				C1844AA928581D5C0010634B /* TeamSelectTableViewCell.swift in Sources */,
+				C129F9E52862A59E00869DB5 /* StatsHeaderUIView.swift in Sources */,
+				C167353E286428E400DBD4DA /* CreateTeamViewController.swift in Sources */,
 				C1A2E88B284B2BAA0014B428 /* SceneDelegate.swift in Sources */,
 				C1A2E89F284B2E020014B428 /* SignUpViewController.swift in Sources */,
 				C1844AA72858172D0010634B /* TeamSelectViewController.swift in Sources */,
+				C16735382863E03000DBD4DA /* Board.swift in Sources */,
+				C1673544286440D800DBD4DA /* StatsAddViewController.swift in Sources */,
+				C16735362863DE2F00DBD4DA /* BoardViewController.swift in Sources */,
+				C167353C2863E79500DBD4DA /* TeamUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

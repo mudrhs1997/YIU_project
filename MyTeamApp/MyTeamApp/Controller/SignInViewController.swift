@@ -9,6 +9,10 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
+    var userArray: [User] = []
+    
+    let dbHelper = DBHelper.shared
+    
     // Email TextField
     private let emailTextField: UITextField = {
         let field = UITextField()
@@ -72,6 +76,13 @@ class SignInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        userArray = dbHelper.readUserData()
+        
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -107,10 +118,22 @@ class SignInViewController: UIViewController {
 
     @objc func didTapSignInButton() {
         let vc = TeamSelectViewController()
+        guard let id = emailTextField.text else { return }
+        vc.user_id = id
         
-        self.navigationController?.pushViewController(vc, animated: true)
+        if loginCheck(id: emailTextField.text!, pwd: passwordTextField.text!) {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         
     }
     
+    func loginCheck(id: String, pwd: String) -> Bool {
+        for user in userArray {
+            if user.id == id && user.password == pwd {
+                return true
+            }
+        }
+        return false
+    }
 
 }

@@ -9,6 +9,8 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+    let dbHelper = DBHelper.shared
+    
     //  Email textField
     private let emailTextField: UITextField = {
        let field = UITextField()
@@ -43,7 +45,8 @@ class SignUpViewController: UIViewController {
         field.backgroundColor = .secondarySystemBackground
         field.layer.cornerRadius = 8
         field.layer.masksToBounds = true
-        field.isSecureTextEntry = true
+        field.textContentType = .oneTimeCode
+        
         return field
     }()
     
@@ -84,6 +87,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         title = "회원가입"
         view.backgroundColor = .systemBackground
+        
         
         view.addSubview(emailTextField)
         view.addSubview(emailErrorLabel)
@@ -139,18 +143,26 @@ class SignUpViewController: UIViewController {
         passwordErrorHeight = passwordErrorLabel.heightAnchor.constraint(equalToConstant: 0)
         passwordErrorHeight.isActive = true
         
-        
+        submitButton.addTarget(self, action: #selector(didTapSubmitButton), for: .touchUpInside)
         
     }
     
+    
     @objc func didTapSubmitButton() {
-        self.presentingViewController?.dismiss(animated: true)
+        guard let idData = emailTextField.text else { return }
+        guard let passwordData = passwordTextField.text else { return }
+        guard let nameData = nameTextField.text else { return }
+        
+        dbHelper.createUserTable()
+        
+        dbHelper.insertUserData(id: idData, password: passwordData, name: nameData)
+        
+        
     }
     
     @objc func textFieldEdited(textField: UITextField) {
         
         if textField == emailTextField {
-            print("\(textField.text!)")
             
             if isValidEmail(testStr: textField.text!) == true {
                 emailErrorHeight.isActive = true
@@ -188,5 +200,7 @@ class SignUpViewController: UIViewController {
         }
         return true
     }
+    
+    
 
 }

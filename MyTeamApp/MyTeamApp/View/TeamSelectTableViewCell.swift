@@ -40,6 +40,7 @@ class TeamSelectTableViewCell: UITableViewCell {
         teamImage.translatesAutoresizingMaskIntoConstraints = false
         teamNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
+        
         NSLayoutConstraint.activate([
             teamImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             teamImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),

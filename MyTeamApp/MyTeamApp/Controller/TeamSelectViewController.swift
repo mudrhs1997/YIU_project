@@ -9,7 +9,10 @@ import UIKit
 
 class TeamSelectViewController: UIViewController {
     
-    var teamArray: [TeamModel] = []
+    var teamArray: [Team] = []
+    var user_id = ""
+    
+    let dbHelper = DBHelper.shared
     
     private let selectTeamTableView: UITableView = {
        let tableView = UITableView()
@@ -31,9 +34,9 @@ class TeamSelectViewController: UIViewController {
         selectTeamTableView.dataSource = self
         selectTeamTableView.delegate = self
         
-      
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTeamButton))
         
-        teamArray.append(TeamModel(image: "swift", name: "team1"))
+        
         
 
         // Do any additional setup after loading the view.
@@ -43,6 +46,9 @@ class TeamSelectViewController: UIViewController {
         super.viewWillAppear(animated)
         
         self.navigationItem.hidesBackButton = true
+        
+        teamArray = dbHelper.readTeamData()
+        selectTeamTableView.reloadData()
         
     }
     
@@ -60,6 +66,15 @@ class TeamSelectViewController: UIViewController {
         selectTeamTableView.estimatedRowHeight = UITableView.automaticDimension
     }
     
+    @objc func addTeamButton() {
+        dbHelper.createTeamTable()
+        dbHelper.createUserTeamTable()
+        
+        let vc = CreateTeamViewController()
+        vc.user_id = user_id
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
 
 }
@@ -72,9 +87,13 @@ extension TeamSelectViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let teamVC = HomeViewController()
+
         teamVC.teamInfo = teamArray[indexPath.row]
-        print(teamVC.teamInfo)
-        self.navigationController?.pushViewController(teamVC, animated: true)
+        teamVC.modalPresentationStyle = .fullScreen
+
+        self.present(teamVC, animated: true, completion: nil)
+//        dbHelper.deleteTeam(name: String(teamArray[indexPath.row].name))
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
